@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block body %}
+<div class="main">
+  <form method="post" class="contact-form">
+    {% csrf_token %}
+    <h1 class="contact-form__title">Contact Form</h1>
+    <div class="contact-form__input_group">
+      <div class="input-group">
+        <input type="text" class="contact-form__input" name="name" placeholder="Full name" />
+      </div>
+      <div class="input-group">
+        <input type="email" class="contact-form__input" name="email" placeholder="E-mail" />
+      </div>
+      <div class="input-group">
+        <textarea class="contact-form__input" name="message" placeholder="How can we help?"
+          style="height: 100PX"></textarea>
+      </div>
+    </div>
+    <input class="contact-form__button" type="submit" value="Send" />
+  </form>
+  <footer class="bg-dark text-white pt-5 pb-4"></footer>
+  <div class="follow-widget">
+    <h2>Follow Us</h2>
+    <p>Stay updated via social media</p>
+    <ul>
+      
+      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      
+      <li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      
+    </ul>
+  </div>
+</div>
+{% endblock body %}
