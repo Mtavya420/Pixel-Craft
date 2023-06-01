@@ -15,7 +15,10 @@ PixelCraft is a web application that offers a wide range of image manipulation o
 To run PixelCraft locally, follow these steps:
 
 1. Clone the repository:
+   ```
    git clone https://github.com/mtavya420/pixelcraft.git
+   
+   ```
 2. Navigate to the project directory:
 3. Create a virtual environment:
 4. Activate the virtual environment:
@@ -33,8 +36,12 @@ To run PixelCraft locally, follow these steps:
   ```
 
 5. Install the dependencies:
-6. Apply database migrations:
-7. Start the development server:
+ ```
+ pip install -r requirements.txt
+ ```
+6. Create .env File
+7. Apply database migrations:
+8. Start the development server:
 
 8. Open your web browser and visit `http://localhost:8000` to access the PixelCraft application.
 
